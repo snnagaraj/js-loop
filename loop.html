@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (i = 0; i <= 20; i++) {
+            if (i % 2 === 0) {
+                console.log(i + " even");
+            }
+            else {
+                console.log(i + " odd");
+            }
+        }
+
+
+
+        let arrayList = [23, 2, 3, 4, 3, 21];
+        let c;
+        let max = arrayList[1];
+        for (let i = 1; i < arrayList.length; ++i) {
+            if (arrayList[i] > max) {
+                c = arrayList[i];
+            }
+        }
+        console.log(c);
+
+        let array = [1, 2, 3, 4, 3, 21];
+        let min = array[0];
+        for (let i = 1; i < array.length; ++i) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        console.log(min);
+
+        const number1 = parseInt(prompt("enter a number"));
+
+        let sum1 = 0;
+        for (i = 1; i <= number1; i++) {
+            sum1 += i;
+        }
+        console.log(i);
+
+
+        let sum = 0;
+        for (i = 1; i <= 6; i++) {
+            sum = sum + i;
+        }
+        console.log(sum);
+
+
+
+        let som = 0;
+        let number = parseInt(prompt('Enter a number: '));
+
+        while (number >= 0) {
+            som += number;
+            number = parseInt(prompt(' number: '));
+        }
+        console.log("the sum is " + som);
+
+
+
+        function numPower(num, pow) {
+            var res = 1; //return 1 for pow=0
+            for (var i = 0; i < pow; i++) {
+                res = res * num;
+            }
+            return res;
+        }
+        console.log(numPower(4, 3)); //64
+        console.log(numPower(16, 2)); //256
+
+
+
+        var arr = [2, 45, 3, 67, 34, 567, 34, 345, 123];
+        var largest = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+            largest = arr[i] > largest ? arr[i] : largest; //Check largest number
+        }
+        console.log(largest) //567
+
+
+        var arr = [[0, 1, 1], [0, 1, 0], [1, 0, 0]];
+        var zeroCount = 0;
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[0].length; j++) {
+                zeroCount = arr[i][j] == 0 ? zeroCount + 1 : zeroCount;
+            }
+        }
+
+        console.log(zeroCount) * / / / 5
+
+
+        let a1 = parseInt(prompt("enter the value"))
+
+        for (i = 0; i <= a1; i++) {
+            if (i == 5) {
+                break;
+            }
+            console.log(i);
+        }
+
+
+        for (i = 0; i <= 10; i++) {
+            if (i <= 4) {
+                console.log(i);
+            }
+            else if (i >= 6) {
+                console.log(i);
+            }
+        }
+
+        for (i = 0; i <= 10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            console.log(i);
+        }
+
+
+        let a = [[1, 2, 3, 4, 5], ["one", "two", "three", "four", "five"]];
+
+        for (i = 0; i < a.length; i++) {
+            for (j = 0; j < a[i].length; j++) {
+                console.log(a[i][j]);
+            }
+        }
+
+
+        var color = ['red', 'blue', 'green', 'yelloe']
+
+        for (let index of color) {
+            console.log(index);
+        }
+
+
+        var numbers = [10, 20, 30, 40, 50]
+
+        for (let num of numbers) {
+            console.log(num);
+        }
+
+
+
+        var person = {
+            name: 'nagaraj',
+            age: 24,
+            study: 'BE',
+            year: 2021,
+        }
+        for (let key in person) {
+            console.log(person[key]);
+        }
+
+
+        var mobile = {
+            brand: 'redmi',
+            model: 'note 10s',
+            type: 'battery',
+            price: 10000,
+        }
+
+        for (let rate in mobile) {
+            console.log(mobile[rate]);
+        }
+
+
+        array = ["red", "green", "yellow", "gray"]
+
+        array.forEach((x) => {
+            console.log(x);
+        });
+
+
+        var ary = ["nagaraj", "mani", "simeon", "arul", "ramesh"]
+
+        ary.forEach(value => {
+            console.log(value);
+        });
+
+        let i = 0;
+        while (i <= 20) {
+            if (i % 2 === 0) {
+                console.log(i + " even");
+            }
+            else {
+                console.log(i + " odd");
+            }
+            i++;
+        }
+
+        let x = 0;
+        do {
+            if (x % 2 === 0) {
+                console.log(i + " even");
+            }
+            else {
+                console.log(i + " odd");
+            }
+            i++;
+
+        } while (i <= 20);
+    </script>
+
+</body>
+
+</html>
